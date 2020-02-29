@@ -1,0 +1,67 @@
+.card-header {
+    background-color: #a9a0ef;
+    color: #e1d1ff;
+    text-align: right;
+}
+
+.cardPadding {
+    padding: 1%;
+}
+
+.headingCenter {
+    text-align: center;
+    font-weight: 200;
+}
+
+body,
+.backgroundColor {
+    background-color: #ececec;
+}
+
+.headingText {
+    font-size: 2rem;
+}
+
+.cardHeight {
+    height: 20vh;
+    padding: 0%;
+}
+
+.l-wrap {
+    max-width: 90%;
+}
+
+.grid-item {
+    float: left;
+}
+
+.grid-item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.birthdayMapping {
+    margin: 0px;
+}
+
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
