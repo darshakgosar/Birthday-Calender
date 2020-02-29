@@ -1,210 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Birthday Calender</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <style>
-  .card-header{
-    background-color: #c4aaed;
-    color: black;
-  }
-  .cardPadding{
-    padding: 1%;
-  }
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Birthday Calender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
+
 <body>
-<div class="wrapper">
-  <div class="content-wrapper">
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-8">
-            <h1>Birthday List</h1>
-          </div>
-          <div class="col-sm-4">
-                <!-- <form method="post"> -->
-                    <input name="year" id="year" class="" type="number" placeholder="Please enter Year" required>
-                    <input class="btn btn-green yearButton" type="submit">
-                <!-- </form> -->
-              </div>
+    <div class="wrapper">
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="card card-solid">
+                    <div class="card-body backgroundColor">
+                        <div class="row">
+                            <div class="col-sm-12 headingCenter">
+                                <span class="headingText">Birthday Cal</span>
+                            </div>
+                            <div class='col cardPadding'>
+                                <div class='card bg-light'>
+                                    <div class='card-header'>
+                                        SUN
+                                    </div>
+                                    <div class='card-body cardHeight'>
+                                        <div class='row SUN birthdayMapping'>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="SUNBirthday birthdayCount"></span>
+                            </div>
+                            <div class='col cardPadding'>
+                                <div class='card bg-light'>
+                                    <div class='card-header'>
+                                        MON
+                                    </div>
+                                    <div class='card-body cardHeight'>
+                                        <div class='row MON birthdayMapping'>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="MONBirthday birthdayCount"></span>
+                            </div>
+                            <div class='col cardPadding'>
+                                <div class='card bg-light'>
+                                    <div class='card-header'>
+                                        TUE
+                                    </div>
+                                    <div class='card-body cardHeight'>
+                                        <div class='row TUE birthdayMapping'>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="TUEBirthday birthdayCount"></span>
+                            </div>
+                            <div class='col cardPadding'>
+                                <div class='card bg-light'>
+                                    <div class='card-header'>
+                                        WED
+                                    </div>
+                                    <div class='card-body cardHeight'>
+                                        <div class='row WED birthdayMapping'>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="WEDBirthday birthdayCount"></span>
+                            </div>
+                            <div class='col cardPadding'>
+                                <div class='card bg-light'>
+                                    <div class='card-header'>
+                                        THU
+                                    </div>
+                                    <div class='card-body cardHeight'>
+                                        <div class='row THU birthdayMapping'>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="THUBirthday birthdayCount"></span>
+                            </div>
+                            <div class='col cardPadding'>
+                                <div class='card bg-light'>
+                                    <div class='card-header'>
+                                        FRI
+                                    </div>
+                                    <div class='card-body cardHeight'>
+                                        <div class='row FRI birthdayMapping'>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="FRIBirthday birthdayCount"></span>
+                            </div>
+                            <div class='col cardPadding'>
+                                <div class='card bg-light'>
+                                    <div class='card-header'>
+                                        SAT
+                                    </div>
+                                    <div class='card-body cardHeight'>
+                                        <div class='row SAT birthdayMapping'>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="SATBirthday birthdayCount"></span>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 10vh;">
+                            <div class="col-sm-6 headingCenter" style="text-align: left;">
+                                <textarea type="text" rows="15" class="form-control" cols="75" name="jsonInput"
+                                    id="jsonInput" required></textarea>
+                            </div>
+                            <div class="col-sm-6 headingCenter" style="text-align: left;">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        Year
+                                    </div>
+                                    <div class="col-sm-12 col-md-12" style="padding:10px;">
+                                        <input type="number" class="form-control" name="yearInput" id="yearInput"
+                                            required style="width: 50%">
+                                    </div>
+                                    <div class="col-sm-12 col-md-12">
+                                        <button type="submit" class="btn btn-primary yearButton">UPDATE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </div>
-    </section>
+    </div>
 
-    <section class="content">
-      <div class="card card-solid">
-        <div class="card-body pb-0">
-          <div class="row birthdayMapping">
-                <!-- card -->
-              
-              <!--  -->
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
-<!-- ./wrapper -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script>
-var birthdayJSON = [
-    {
-      name: "Tyrion Lannister",
-      birthday: "12/02/1978"
-    }, {
-      name: "Cersei Lannister",
-      birthday: "11/30/1975"
-    }, {
-      name: "Daenerys Targaryen",
-      birthday: "11/24/1991"
-    }, {
-      name: "Arya Stark",
-      birthday: "11/25/1996"
-    }, {
-      name: "Jon Snow",
-      birthday: "12/03/1989"
-    }, {
-      name: "Sansa Stark",
-      birthday: "15/08/1992"
-    }, {
-      name: "Jorah Mormont",
-      birthday: "12/16/1968"
-    }, {
-      name: "Jaime Lannister",
-      birthday: "12/06/1975"
-    }, {
-      name: "Sandor Clegane",
-      birthday: "11/07/1969"
-    }, {
-      name: "Tywin Lannister",
-      birthday: "10/12/1951"
-    }, {
-      name: "Theon Greyjoy",
-      birthday: "12/31/1989"
-    }, {
-      name: "Samwell Tarly",
-      birthday: "12/07/1990"
-    }, {
-      name: "Joffrey Baratheon",
-      birthday: "06/12/1992"
-    }, {
-      name: "Catelyn Stark",
-      birthday: "12/03/1962"
-    }, {
-      name: "Bran Stark",
-      birthday: "12/02/1995"
-    }, {
-      name: "Petyr Baelish",
-      birthday: "11/20/1974"
-    }, {
-      name: "Robb Stark",
-      birthday: "11/28/1986"
-    }, {
-      name: "Brienne of Tarth",
-      birthday: "11/27/1985"
-    }, {
-      name: "Margaery Tyrell",
-      birthday: "12/02/1989"
-    }, {
-      name: "Stannis Baratheon",
-      birthday: "09/14/1971"
-    }, {
-      name: "Davos Seaworth",
-      birthday: "02/13/1973"
-    }, {
-      name: "Tormund Giantsbane",
-      birthday: "12/14/1974"
-    }, {
-      name: "Jeor Mormont",
-      birthday: "11/01/1955"
-    }, {
-      name: "Eddard Stark",
-      birthday: "12/02/1963"
-    }, {
-      name: "Khal Drogo",
-      birthday: "12/05/1980"
-    }, {
-      name: "Ramsay Bolton",
-      birthday: "12/05/1976"
-    }, {
-      name: "Robert Baratheon",
-      birthday: "12/02/1965"
-    }, {
-      name: "Daario Naharis",
-      birthday: "12/02/1985"
-    }, {
-      name: "Viserys Targaryen",
-      birthday: "12/02/1985"
-    }
-]
-// console.log(birthdayJSON);
-var days = [
-    'SUN',
-    'MON',
-    'TUE',
-    'WED',
-    'THU',
-    'FRI',
-    'SAT'
-];
-</script>
-<script>
-    $('.yearButton').click( function() {
-        if($('#year').val() && !($('#year').val().length > 4)){
-            $('.birthdayMapping').html('');
-            var updatedBirthdayJson = _.filter(birthdayJSON, function(obj){
-    return new Date(obj.birthday).getYear() == new Date($('#year').val()).getYear()
-});
-if(updatedBirthdayJson.length > 0){
-            var groups = _.groupBy(updatedBirthdayJson, function (date) {
-                    return days[new Date(date.birthday).getDate()]
-});
-_.each(groups, function(obj){
-var cardbody,cardheader,cardColumns;
-if(obj.length > 1){
-    cardColumns="<div class='col-sm-6 col-md-3 cardPadding'>";
-    cardheader="<div class='card bg-light'><div class='card-header'>"+days[new Date(obj[0].birthday).getDate()]+"</div>";
-    cardbody="<div class='card-body pt-0'><div class='row><div class='col-3'><h2><b>";
-    for(var i=0;i<obj.length;i++){
-        if(i>0){
-            cardbody+=",";
-        }
-        var name = obj[i].name;
-        var regex = name.match(/\b(\w)/g);
-        var nameJoin = regex.join('');
-        cardbody+= nameJoin;
-    }
-    cardbody+="</b></h2></div></div></div></div>"
-    $('.birthdayMapping').append(cardColumns+cardheader+cardbody);
-}else{
-    var name = obj[0].name;
-    var regex = name.match(/\b(\w)/g);
-    var nameJoin = regex.join('');
-    cardColumns="<div class='col-sm-6 col-md-3 cardPadding'>";
-    cardheader="<div class='card bg-light'><div class='card-header'>"+days[new Date(obj[0].birthday).getDate()]+"</div>";
-    cardbody= "<div class='card-body pt-0'><div class='row><div class='col-3'><h2><b>"+nameJoin+"</b></h2></div></div></div></div>";
-    $('.birthdayMapping').append(cardColumns+cardheader+cardbody);
-}
-})
-}else{
-    $('.birthdayMapping').html('No Data Found');
-}
-        }else{
-            alert('Please check the data');
-        }
-});
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="Javascript/index.js"></script>
 </body>
+
 </html>
